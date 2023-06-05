@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Informativo</title>
+    <link rel="stylesheet" href="style/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<script>
+    // Função para lidar com o clique no link
+    $('a[href^="#"]').on('click', function(event) {
+        var target = $(this.getAttribute('href'));
+        if (target.length) {
+            event.preventDefault();
+            $('html, body').stop().animate({
+                scrollTop: target.offset().top
+            }, 1000); // 1000 representa a duração da animação em milissegundos
+        }
+    });
+</script>
+
+<body id="home">
+    
+    <header>
+        <h1><a href="#parte1">Home</a></h1>
+        <h1><a href="#parte2">Atos Discriminatorios</a></h1>
+        <h1><a href="https://www.canva.com/design/DAFj3PYnbbs/y5yLH8_j46nExmtpWxk6vA/view?utm_content=DAFj3PYnbbs&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink" target="_blank">Cartilha informativa</a> </h1>
+            
+    </header>
+
+    
+    <section id="parte1">
+        <div>
+            <div class="titulo">
+            <h1>Saúde contra descriminação</h1>
+        </div>
+        <div class="sub-titulo">
+            <p class="c1">O que pode ser considerado discriminação racial de acordo com a lei?</p>
+            <p class="c2">Segundo a LEI Nº 12.288, DE 20 DE JULHO DE 2010,  Art. 1 o, é toda distinção, exclusão, restrição ou preferência baseada em raça, cor, descendência ou origem nacional ou étnica que tenha por objeto anular ou restringir o reconhecimento, gozo ou exercício, em igualdade de condições, de direitos humanos e liberdades fundamentais nos campos político, econômico, social, cultural ou em qualquer outro campo da vida pública ou privada</p>
+            <p class="c3">Você que  faz parte da população brasileira que usa o sistema único de saúde (sus), sabe identificar atos discriminatórios e intolerantes durante o atendimento de saúde? Consegue perceber se outra pessoa esta sendo discriminada ou se você esta sendo discriminado ?</p>
+        </div>
+        </div>
+        <div>
+            <button class="quest"><a href="https://forms.gle/WT3cxYDZJqb9nzf19"  target="_blank"><i>LINK QUESTIONÁRIO</i></a></button>
+            <button class="discdenun">DISQUE SAÚDE 136</button>
+        </div>
+            
+            
+           
+            
+            
+    </section>
+
+    <section id="parte2">
+        <div>
+            <div class="titulo">
+            <h1>Algumas situações consideradas discriminatórias</h1>
+        </div>
+        <div class="sub-titulo">
+            <p class="c4">Entenda um pouco quais seriam esses atos discriminatórios abaixo:</p>
+        </div>
+        <ul>
+            <div><li>A recusa de fornecimento ou impedimento de fruição de bens ou serviços, colocados à disposição do público;</li></div>    
+            <div><li>O impedimento ou limitação ao acesso e exercício normal de uma atividade económica;</li></div>
+            <div><li>A recusa ou limitação de acesso a locais públicos ou abertos ao público;</li></div>
+            <div><li>A recusa ou limitação de acesso aos cuidados de saúde prestados em estabelecimentos de saúde públicos ou privados;</li></div>
+            <div><li>A recusa ou limitação de acesso a estabelecimentos de educação ou ensino público ou privado;</li></div>
+            
+        </ul>
+
+
+    </section>
+
+    
+
+    
+</body>
+</html>
